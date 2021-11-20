@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211120 12:55:19.164" rpa="false" schemaversion="2">
+<suite id="s1" name="Tester" source="/home/marco/PycharmProjects/RobotTester/Suite/tester.robot">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Login Page" library="resource">
+<kw name="Open Browser">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20211120 12:55:19.181" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211120 12:55:19.181" endtime="20211120 12:55:19.181"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211120 12:55:19.182" endtime="20211120 12:55:19.182"/>
+</kw>
+<status status="FAIL" starttime="20211120 12:55:19.180" endtime="20211120 12:55:19.182"/>
+</kw>
+<kw name="Input Credentials" library="resource">
+<arg>demo</arg>
+<arg>mode</arg>
+<status status="NOT RUN" starttime="20211120 12:55:19.183" endtime="20211120 12:55:19.183"/>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<status status="NOT RUN" starttime="20211120 12:55:19.183" endtime="20211120 12:55:19.183"/>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211120 12:55:19.183" endtime="20211120 12:55:19.183"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20211120 12:55:19.184" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20211120 12:55:19.184" endtime="20211120 12:55:19.184">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20211120 12:55:19.180" endtime="20211120 12:55:19.184">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite for valid login.
+
+Keywords are imported from the resource file</doc>
+<status status="FAIL" starttime="20211120 12:55:19.164" endtime="20211120 12:55:19.185"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tester">Tester</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211120 12:55:19.179" level="ERROR">Error in file '/home/marco/PycharmProjects/RobotTester/Suite/resource.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/marco/PycharmProjects/RobotTester/venv/bin
+  /usr/lib/python38.zip
+  /usr/lib/python3.8
+  /usr/lib/python3.8/lib-dynload
+  /home/marco/PycharmProjects/RobotTester/venv/lib/python3.8/site-packages</msg>
+</errors>
+</robot>

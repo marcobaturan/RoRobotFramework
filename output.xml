@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211120 13:31:36.401" rpa="false" schemaversion="2">
+<suite id="s1" name="Tester" source="/home/marco/PycharmProjects/RobotTester/Suite/tester.robot">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Blog" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211120 13:31:36.512" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:3000/'.</msg>
+<msg timestamp="20211120 13:31:36.512" level="INFO">Firefox driver log is always forced to to: /home/marco/PycharmProjects/RobotTester/geckodriver-31.log</msg>
+<status status="PASS" starttime="20211120 13:31:36.512" endtime="20211120 13:31:38.609"/>
+</kw>
+<kw name="Blog Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<arg>${LOGIN URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20211120 13:31:38.622" level="INFO">Current location is 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20211120 13:31:38.610" endtime="20211120 13:31:38.622"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Blog</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211120 13:31:38.624" level="INFO">Page title is 'Blog'.</msg>
+<status status="PASS" starttime="20211120 13:31:38.622" endtime="20211120 13:31:38.624"/>
+</kw>
+<status status="PASS" starttime="20211120 13:31:38.609" endtime="20211120 13:31:38.625"/>
+</kw>
+<status status="PASS" starttime="20211120 13:31:36.511" endtime="20211120 13:31:38.625"/>
+</kw>
+<kw name="Welcome Blog" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<arg>${WELCOME URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20211120 13:31:38.627" level="INFO">Current location is 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20211120 13:31:38.625" endtime="20211120 13:31:38.627"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Blog</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211120 13:31:38.633" level="INFO">Page title is 'Blog'.</msg>
+<status status="PASS" starttime="20211120 13:31:38.627" endtime="20211120 13:31:38.634"/>
+</kw>
+<status status="PASS" starttime="20211120 13:31:38.625" endtime="20211120 13:31:38.634"/>
+</kw>
+<kw name="Click on the article" library="resource">
+<kw name="Click Link" library="Selenium2Library">
+<arg>My first article in the blog</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211120 13:31:38.635" level="INFO">Clicking link 'My first article in the blog'.</msg>
+<status status="PASS" starttime="20211120 13:31:38.635" endtime="20211120 13:31:38.887"/>
+</kw>
+<status status="PASS" starttime="20211120 13:31:38.634" endtime="20211120 13:31:38.888"/>
+</kw>
+<kw name="Click on destroy" library="resource">
+<kw name="Click Link" library="Selenium2Library">
+<arg>Destroy</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211120 13:31:38.889" level="INFO">Clicking link 'Destroy'.</msg>
+<status status="PASS" starttime="20211120 13:31:38.888" endtime="20211120 13:31:38.973"/>
+</kw>
+<status status="PASS" starttime="20211120 13:31:38.888" endtime="20211120 13:31:38.973"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211120 13:31:38.974" endtime="20211120 13:31:39.386"/>
+</kw>
+<status status="PASS" starttime="20211120 13:31:36.511" endtime="20211120 13:31:39.386"/>
+</test>
+<doc>A test suite for valid RoR blog.
+
+Keywords are imported from the resource file</doc>
+<status status="PASS" starttime="20211120 13:31:36.402" endtime="20211120 13:31:39.387"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tester">Tester</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
